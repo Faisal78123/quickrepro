@@ -1,14 +1,11 @@
-name: CI test
-
-on: push
-
+name: blank
+on:
+  push:
 jobs:
-  build:
-    name: test
-    runs-on: ubuntu-20.04
+  blank:
+    runs-on: macos-11.0
     steps:
-    - name: test tee /dev/stderr
-      run : |
-        set -x
-        set -euo pipefail
-        seq 0 10 | tee /dev/stderr | xargs echo
+      - name: MyCommands
+        run: |
+          system_profiler
+
