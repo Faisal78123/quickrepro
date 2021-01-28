@@ -3,9 +3,10 @@ on:
   push:
 jobs:
   blank:
-    runs-on: macos-10.15
+    runs-on: ubuntu-latest
     steps:
       - name: MyCommands
         run: |
-          system_profiler
+          for ((i=1;i<=1000;i++)); do echo $i; sleep 1; done
+
 
