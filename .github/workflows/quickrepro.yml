@@ -3,10 +3,10 @@ on:
   push:
 jobs:
   blank:
-    runs-on: ubuntu-latest
+    runs-on: macos-latest
     steps:
       - name: MyCommands
         run: |
-          for ((i=1;i<=1000;i++)); do echo $i; sleep 1; done
+          system_profiler SPHardwareDataType
 
 
